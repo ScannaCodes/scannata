@@ -1,0 +1,16 @@
+{
+  "name": "scannata-clips",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scannata Clips: a local clipping studio. Edit, export, post to TikTok and Instagram, and track how your clips do.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && for f in lib/*.js public/js/*.js; do node --check \"$f\" || exit 1; done"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}
